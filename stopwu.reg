@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"PauseFeatureUpdatesStartTime"="2000-01-01T00:00:00Z"
+"PauseFeatureUpdatesEndTime"="9999-12-31T00:00:00Z"
+"PauseQualityUpdatesStartTime"="2000-01-01T00:00:00Z"
+"PauseQualityUpdatesEndTime"="9999-12-31T00:00:00Z"
+"PauseUpdatesStartTime"="2000-01-01T00:00:00Z"
+"PauseUpdatesExpiryTime"="9999-12-31T00:00:00Z"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc]
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+"SetDisableUXWUAccess"=dword:00000001
+"NoAUShutdownOption"=dword:00000001
+"AlwaysAutoRebootAtScheduledTime"=dword:00000000
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+"AutoInstallMinorUpdates"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings]
+"PausedFeatureStatus"=dword:00000001
+"PausedQualityStatus"=dword:00000001
+"PausedQualityDate"="2000-01-01T00:00:00"
+"PausedFeatureDate"="2000-01-01T00:00:00"
