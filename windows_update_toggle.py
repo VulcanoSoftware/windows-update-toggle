@@ -17,6 +17,7 @@ REG_FILES = {
 
 def cleanup():
     """Verwijder alle REG-bestanden bij afsluiten"""
+    input("Druk op Enter om af te sluiten...")
     for reg in REG_FILES.values():
         try:
             if os.path.exists(reg["filename"]):
@@ -117,5 +118,4 @@ if __name__ == "__main__":
         print(f"Er is een fout opgetreden: {e}")
     finally:
         # Zorg dat cleanup wordt uitgevoerd
-        input("Druk op Enter om af te sluiten...")
         cleanup()
