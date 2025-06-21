@@ -1,1 +1,1 @@
-pyinstaller -i logo.ico --uac-admin --add-data "uac_manifest.xml;." --onefile --windowed windows_update_toggle.py
+pyinstaller -i logo.ico --uac-admin --add-data "uac_manifest.xml;." --onefile --console --windowed windows_update_toggle.py
